@@ -77,9 +77,9 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+/* .active, .dot:hover {
   background-color: #717171;
-}
+} */
 
 /* Fading animation */
 .fade {
@@ -583,16 +583,16 @@
 
 <!--============================== [slider] ========= -->
 <!-- ====03-17-2021 -->
-<section id="featured2" class="featured featured-2 text-center pt-110 container">
+<!-- <section id="featured2" class="featured featured-2 text-center pt-110 container"> -->
 	<div class="row ">
         <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
             <div class="heading mb-50 text--center">
-                <h2>Centennial College</h2>
+                <h2 style="font-family: 'Montserrat' !important">Centennial College</h2>
                 <p>This is a short text area to describe the project. Just write a few words about the success of the project and let the images tell the rest of the story. </p>
             </div>
         </div>
     </div>
-</section>
+<!-- </section> -->
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -614,16 +614,94 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+<!-- ===================== Related Projects ===================-->
 
-                         
+
+  <section id="featured2" class="featured featured-2 text-center pt-110 container">
+	<div class="row ">
+        <div class="col-sm-12 col-md-6 col-lg-6 offset-lg-3">
+            <div class="heading mb-50 text--center">
+                <h2>Related Projects</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== image container============== -->
+
+<!-- <section id="featured2" class="featured featured-2 text-center pt-110 container"> -->
+	<div class="row ">
+        <div class="col-sm-12 col-md-12 col-lg-3 offset-lg-3">
+
+
+            
+		</div>
+		<!-- .col-lg-6 end -->
+	</div>
+	<div class="row image-gallery">
+		<div class="column">
+			<div class="img-container">
+				<img src="assets/images/gallery/demolition/3.jpg">
+				<div class="overlay">
+					<div class="title">					
+							<p>Demolition</p> 
+					</div>
+					<p class="text">We offer selective demolition - interior and/or exterior as well as a wide range of demolition applications accounting for; engineering, shoring, and hazardous materials.
+						Tonnage or volume estimates of valuable reclaimed metals and material are calculated for our customers.
+					</p>					
+				</div>
+			</div>
+			<div class="img-container">
+				<img src="assets/images/gallery/asbestos/4.jpg">
+				<div class="overlay">
+					<div class="title">					
+							<p>Hazardous Materials Abatement</p> 
+					</div>
+					<p class="text">•	Abatement and remediation of Hazardous Materials <br>
+•	Coordination of site condition surveys and environmental consultant reviews
+					</p>					
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="img-container">
+				<a href="robotics.html"><img src="assets/images/gallery/demolition/6.jpg"></a>
+				<div class="overlay">
+					<div class="title">					
+							<p>Robotics</p> 
+					</div>
+					<p class="text">
+•	Demolition with emission free robots <br>
+•	Remote controlled and compact robots have more access to areas with limited space <br>
+•	With a 360 degree rotation, it can dig, break, crush and remove large areas of concrete <br>
+•	They are extremely accurate and safer for the operators
+					</p>					
+				</div>
+			</div>
+			<div class="img-container">
+				<img src="assets/images/gallery/consulting/5.jpg">
+				<div class="overlay">
+					<div class="title">					
+							<p>Demolition Consulting</p> 
+					</div>
+					<p class="text">•	Expert consulting to offer the best demolition and waste removal solutions for your project <br>
+•	Initial Stage construction forecasting and budgeting<br>
+•	Demolition engineering conceptual designs and sequence analysis
+
+					</p>					
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+<!-- </section> -->
+
+<!-- ============= End of image Container ================ -->
+
+  
+
+                       
 <!-- =============================== -->
 
 <!-- CTA #1
@@ -734,17 +812,13 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+//   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
 // automatic slider
 
@@ -764,9 +838,6 @@ function showSlides() {
 }
 </script>
 <!-- ==================== -->
-
-
-
 
 <!-- Footer Scripts
 ============================================= -->
