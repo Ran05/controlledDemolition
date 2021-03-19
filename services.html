@@ -99,6 +99,111 @@
   to {opacity: 1}
 }
 
+.team-grid {
+  color:#313437;
+  background-color:#fff;
+}
+
+.team-grid p {
+  color:#7d8285;
+}
+
+.team-grid h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .team-grid h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.team-grid .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.team-grid .intro p {
+  margin-bottom:0;
+}
+
+.team-grid .people {
+  padding:50px 0;
+}
+
+.team-grid .item {
+  margin-bottom:30px;
+}
+
+.team-grid .item .box {
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:280px;
+  position:relative;
+  overflow:hidden;
+}
+
+.team-grid .item .cover {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgb(27 31 35 / 75%);
+  transition:opacity 0.15s ease-in;
+  opacity:0;
+  padding-top:80px;
+  color:#fff;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+}
+
+
+/* image grid column */
+.team-grid .item:hover .cover {
+  opacity:1;
+}
+
+.team-grid .item .name {
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.team-grid .item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#bbd8fb;
+  letter-spacing:2px;
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+.team-grid .social {
+  font-size:18px;
+}
+
+.team-grid .social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+}
+
+.team-grid .social a:hover {
+  opacity:1;
+}
+
+h4{
+    color: white;
+}
+
 </style>
 
 <!-- Document Meta
@@ -241,8 +346,8 @@
 <!-- ================================================================================================================ -->
                                              <!-- 03-17-2021 -->
 <!-- services 2 -->
-<section id="featured2" class="featured featured-2 text-center pt-110 container">
-	<div class="row ">
+<!-- <section id="featured2" class="featured featured-2 text-center pt-110 container"> -->
+<br><br><br>	<div class="row ">
 		<div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
 			<div class="heading mb-50 text--center">
 				<h2>OUR SERVICES</h2>
@@ -302,12 +407,9 @@
 
 					</p>					
 				</div>
-			</div>
-			
-			
+			</div>		
 		</div>
-
-		<div class="column">
+    <div class="column">
 			<div class="img-container">
 				<img src="assets/images/gallery/shoring/3.jpg">
 				<div class="overlay">
@@ -343,7 +445,7 @@
 			
 		</div> -->
 	</div>
-</section>
+<!-- </section> -->
 
 <!-- ===================================================================================================== -->
 
@@ -585,7 +687,7 @@
 <!--============================== [slider] ========= -->
 <!-- ====03-17-2021 -->
 <!-- <section id="featured2" class="featured featured-2 text-center pt-110 container"> -->
-	<div class="row ">
+<br><br><br>	<div class="row ">
         <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
             <div class="heading mb-50 text--center">
                 <h2 style="font-family: 'Montserrat' !important">Centennial College</h2>
@@ -618,19 +720,62 @@
 <!-- ===================== Related Projects ===================-->
 
 
-  <section id="featured2" class="featured featured-2 text-center pt-110 container">
-	<div class="row ">
+  <!-- <section id="featured2" class="featured featured-2 text-center pt-110 container"> -->
+<br><br><br><div class="row ">
         <div class="col-sm-12 col-md-6 col-lg-6 offset-lg-3">
             <div class="heading mb-50 text--center">
                 <h2>Related Projects</h2>
             </div>
         </div>
     </div>
-</section>
+<!-- </section> -->
 
 <!-- ============== image container============== -->
 
-	<div class="row ">
+<div class="team-grid">
+    <div class="container">
+        <div class="row people">
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image:url(assets/images/gallery/asbestos/1.jpg)">
+                    <div class="cover">
+                        <h3 class="name">East Brampton WTP</h3>
+                        <!-- <p class="title">Musician</p> -->
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image:url(assets/images/gallery/consulting/1.jpg)">
+                    <div class="cover">
+                        <h3 class="name">Micheal Garron Hospital</h3>
+                        <!-- <p class="title">Artist </p> -->
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image:url(assets/images/gallery/demolition/1.jpg)">
+                    <div class="cover">
+                        <h3 class="name">Enclosed Area Spadina Avenue</h3>
+                        <!-- <p class="title">Stylist </p> -->
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" style="background-image:url(assets/images/gallery/dismantle/2.jpg)">
+                    <div class="cover">
+                        <h3 class="name">Royal Bank Vault</h3>
+                        <!-- <p class="title">Model </p> -->
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!-- <div class="row ">
         <div class="col-sm-3 col-md-3 col-lg-3 p-3 card">
             <img src="assets/images/gallery/shoring/4.jpg " >
 		</div>
@@ -644,7 +789,7 @@
             <img src="assets/images/gallery/dismantle/1.jpg">
 		</div>
     </div>
-	
+	 -->
 
 <!-- ============= End of image Container ================ -->
 
