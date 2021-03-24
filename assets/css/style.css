@@ -215,7 +215,7 @@ h2 {
 
 .h3,
 h3 {
-    font-size: 38px;
+    font-size: 18px;
     color: #FFFFFF;
 }
 
@@ -10136,7 +10136,7 @@ footer .widget-newsletter form {
 }
 
 .pie-chart .skill-name h6 {
-	color: #222222;
+	color: white;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1;
